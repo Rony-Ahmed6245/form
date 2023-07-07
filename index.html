@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+      form{
+        width: 500px;
+        height: 600px;
+        /* background-color: aliceblue; */
+        border: 5px solid tomato;
+        border-radius: 5px;
+      }
+      h1{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom:20px ;
+        color: whitesmoke;
+      }
+      .logo{
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .logo img{
+        width: 50px;
+        border-radius: 50%;
+      }
+      .form-header{
+        border-top:20px solid white ;
+        background-color: rgb(248, 150, 150);
+        padding-bottom: 20px;
+      }
+      input[type=text] {
+        border: none;
+        border-bottom: 2px solid red;
+        width:430px;
+        /* text-align: ; */
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-top: 100px;
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 18px;
+     }
+     input[type=password] {
+        border: none;
+        border-bottom: 2px solid red;
+        width:430px;
+        background-color: none;
+        /* text-align: center; */
+        padding: 10px;
+        font-weight: 700;
+        text-transform: capitalize;
+        font-size: 18px;
+     }
+     .form-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+     }
+     .forgot{
+        text-align: right;
+        margin-right: 25px;
+     }
+     span{
+        color: red;
+        cursor: pointer;
+     }
+     .form-footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 40px;
+        padding: 30px;
+     }
+     button{
+        width: 100px;
+        padding: 10px;
+        color: aliceblue;
+        background-color: red;
+        outline: none;
+        border: none;
+        border-radius: 50px;
+        font-weight: bold;
+        text-transform: capitalize;
+        cursor: pointer;
+     }
+    </style>
+</head>
+<body>
+    <form action="">
+        <div class="form-header">
+            <h1>login form</h1>
+            <div class="logo">
+                <img src="download.png" alt="">
+                <img src="download.png" alt="">
+                <img src="download.png" alt="">
+            </div>
+        </div>
+        <div class="form-body">
+            <label for="">
+                <input placeholder="Your name" type="text" name="" id="">
+            </label><br>
+            <label for=""> 
+                <input placeholder="Password" type="password" name="" id="">
+            </label>
+        </div>
+        <p class="forgot">Forgot <span>Password?</span></p>
+        
+        <div class="form-footer">
+            <div class="login-btn">
+                <button>login</button>
+            </div>
+            <div class="text">
+                <p>Don't have an Account? <span>sign up</span></p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
